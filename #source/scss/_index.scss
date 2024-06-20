@@ -1,0 +1,366 @@
+.herosection {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #F7F7F7;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .container-fluid {
+        position: relative;
+        z-index: 2;
+        padding-left: calc((100vw - 1450px)/2);
+        padding-right: 0;
+    }
+
+    .swiper-slide {
+        opacity: 0 !important;
+
+        &.swiper-slide-active {
+            opacity: 1 !important;
+        }
+    }
+}
+
+.herosection__info {
+    p {
+        max-width: 611px;
+        margin-bottom: 35px;
+        font-size: 17px;
+        line-height: 170%;
+        color: var(--black);
+    }
+
+    .contactus {
+        margin-top: 35px;
+        border-radius: 10px;
+        border: 1px solid var(--red);
+        min-height: 65px;
+        min-width: 251px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--red);
+        font-size: 15px;
+        line-height: 140%;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        svg {
+            margin-left: 5px;
+            margin-top: -2px;
+        }
+    }
+}
+
+.herosection__brands {
+    max-width: 471px;
+
+    .brand {
+        padding: 3px 15px;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid #CFCFCF;
+        border-radius: 40px;
+        margin-bottom: 10px;
+        margin-right: 6px;
+
+        .brandimg {
+            width: 100%;
+            max-width: 32px;
+            flex: 0 0 32px;
+            max-height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .name {
+            padding-left: 5px;
+            color: #767676;
+            font-weight: 500;
+            line-height: 170%;
+        }
+    }
+}
+
+.herosection__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 74%;
+}
+
+.mainslider {
+    padding-top: 50px;
+
+    img {
+        max-width: 100%;
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        background: #fff;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: initial;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        right: calc(50% - 65px);
+    }
+
+    .swiper-button-prev {
+        left: calc(50% - 65px);
+    }
+
+}
+
+.autoparts {
+    padding: 100px 0;
+}
+
+.autoparts__left {
+    p:not(.titleh3) {
+        margin-bottom: 45px;
+        line-height: 170%;
+        color: var(--black);
+        max-width: 360px;
+    }
+}
+
+.autoparts__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(#151515, 0.2);
+
+    .autoparts__img {
+        width: 100%;
+        max-width: 77px;
+        flex: 0 0 77px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .autoparts__name {
+        width: 100%;
+        max-width: 290px;
+        flex: 0 0 290px;
+        padding-left: 40px;
+        padding-right: 10px;
+
+        p {
+            margin: 0;
+            font-size: 25px;
+            line-height: 170%;
+            font-weight: 600;
+            color: #404040;
+        }
+    }
+
+    .autoparts__descr {
+        width: 100%;
+        max-width: calc(100% - 367px);
+        flex: 0 0 calc(100% - 367px);
+        padding-right: 25px;
+
+        p {
+            margin: 0;
+            max-width: 450px;
+            line-height: 170%;
+            color: var(--black);
+        }
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url('../img/autoparts-arr.svg') no-repeat center / 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.whysect {
+    padding: 137px 0;
+    background: #F7F7F7;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.whybox {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(#000, 0.09);
+    margin-bottom: 25px;
+
+    .icbox {
+        width: 100%;
+        max-width: 64px;
+        flex: 0 0 65px;
+    }
+
+    .descrbox {
+        width: 100%;
+        max-width: calc(100% - 64px);
+        flex: 0 0 calc(100% - 64px);
+        padding-left: 20px;
+
+        .title {
+            margin-bottom: 15px;
+            line-height: 170%;
+            color: #404040;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        p {
+            margin: 0;
+            color: var(--black);
+            max-width: 511px;
+        }
+    }
+}
+
+.whtopbg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.whbotbg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.brandssection {
+    padding: 105px 0;
+
+    .titleh3 {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .brandssectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brandblock {
+        border-radius: 20px;
+        background: #fff;
+        min-height: 120px;
+        width: 250px;
+        box-shadow: 0 2px 8px rgba(#000, 0.12);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px 30px 15px;
+    }
+
+
+}
+
+.teamsect {
+    padding: 110px 0;
+    background: #F7F7F7;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .imgwrap {
+        display: inline-block;
+        margin-right: 30px;
+        position: relative;
+        max-width: 588px;
+        width: 100%;
+
+        .timg {
+            width: 100%;
+        }
+
+        .ticon {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+        }
+    }
+
+    .bgel {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.teamdescr {
+    max-width: 467px;
+    margin: 0 auto;
+
+    p:not(.titleh3) {
+        color: var(--black);
+        line-height: 170%;
+        margin-bottom: 45px;
+    }
+}
+
+
+
+
+
+@media(max-width:1700.8px) {
+    .herosection__bg {
+        width: 65%;
+    }
+}
