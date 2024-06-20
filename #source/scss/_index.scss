@@ -297,62 +297,10 @@
         border-radius: 20px;
         background: #fff;
         min-height: 120px;
-        width: 250px;
-        box-shadow: 0 2px 8px rgba(#000, 0.12);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 15px 30px 15px;
+   
     }
 
 
-}
-
-.teamsect {
-    padding: 110px 0;
-    background: #F7F7F7;
-    position: relative;
-
-    .container {
-        position: relative;
-        z-index: 2;
-    }
-
-    .imgwrap {
-        display: inline-block;
-        margin-right: 30px;
-        position: relative;
-        max-width: 588px;
-        width: 100%;
-
-        .timg {
-            width: 100%;
-        }
-
-        .ticon {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 100px;
-        }
-    }
-
-    .bgel {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-}
-
-.teamdescr {
-    max-width: 467px;
-    margin: 0 auto;
-
-    p:not(.titleh3) {
-        color: var(--black);
-        line-height: 170%;
-        margin-bottom: 45px;
-    }
 }
 
 
