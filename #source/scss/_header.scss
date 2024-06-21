@@ -93,3 +93,63 @@ header.header {
     }
 
 }
+
+.menubtn {
+    display: none;
+}
+
+.header.scroll {
+    .menubtn {
+        filter: brightness(0);
+    }
+}
+
+@media(max-width:1599.8px) {
+    header.header ul li {
+        margin-right: 45px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    header.header .loc {
+        padding-left: 20px;
+        font-size: 13px;
+    }
+
+    header.header .loc:after {
+        width: 20px;
+        height: 20px;
+        top: 2px;
+    }
+
+    header.header ul li {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .headernavcolumn {
+        display: none;
+    }
+
+    .hcloc {
+        display: none;
+    }
+
+    header .container {
+        position: relative;
+    }
+
+    .menubtn {
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+        top: 3px;
+        z-index: 2;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        
+    }
+}
