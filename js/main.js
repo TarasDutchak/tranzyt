@@ -5,6 +5,11 @@ $(document).ready(function () {
         effect: "fade",
         loop: true,
         initialSlide: 3,
+        speed: 1000,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
 
         pagination: {
             el: ".swiper-pagination",
@@ -29,6 +34,12 @@ $(document).ready(function () {
     var swiper = new Swiper(".testimsl", {
         slidesPerView: 1,
         spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -54,21 +65,48 @@ $(document).ready(function () {
         },
     });
 
-    $('.menubtn').click(function(){
+    // brands slider
+    var swiper = new Swiper(".brandsslider.v1", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: true,
+        speed: 6000,
+        
+        autoplay: {
+            delay: 1,
+            disableOnInteraction: false,
+        },
+    });
+
+    var swiper = new Swiper(".brandsslider.v2", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: true,
+        speed: 6000,
+        
+        autoplay: {
+            delay: 1,
+            disableOnInteraction: false,
+            reverseDirection: true
+        },
+    });
+
+
+    $('.menubtn').click(function () {
         $('.headernavcolumn').addClass('active');
         $('.mobshadowbox').addClass('show');
     });
 
-    $('.closemenu').click(function(){
+    $('.closemenu').click(function () {
         $('.headernavcolumn').removeClass('active');
         $('.mobshadowbox').removeClass('show');
     });
 
-    $('.mobshadowbox').click(function(){
+    $('.mobshadowbox').click(function () {
         $('.headernavcolumn').removeClass('active');
         $('.mobshadowbox').removeClass('show');
     });
-     
+
     $("header.header nav ul, footer.footer nav ul").on("click", "a:not(.normallink)", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
@@ -83,14 +121,14 @@ $(document).ready(function () {
         })
     }
 
-    $(".totop").click(function() {
+    $(".totop").click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
-      });
+    });
 
 
-      
-      $(".scrlcont").on("click", function (event) {
+
+    $(".scrlcont").on("click", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 80;
