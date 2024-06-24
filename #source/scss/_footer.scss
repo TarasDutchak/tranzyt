@@ -49,6 +49,15 @@ footer.footer {
     width: 65px;
 }
 
+.footertop ul li a {
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--red);
+    }
+}
+
+
 @media(max-width:1599.8px) {
     .footertop {
         padding: 60px 0 50px;
@@ -97,5 +106,37 @@ footer.footer {
         .container {
             position: relative;
         }
+    }
+}
+
+@media(max-width:575.8px) {
+    
+    .totop {
+        width: 40px;
+        height: 40px;
+        right: 12px;
+        top: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .footertop ul li {
+        margin: 0 10px 5px 10px;
+    }
+
+    .footertop {
+        padding: 40px 0 30px;
+    }
+
+    .footerbott p {
+        font-size: 14px;
+    }
+
+    .footerbott {
+        padding: 4px 0;
+        height: auto;
+        min-height: 42px;
     }
 }
