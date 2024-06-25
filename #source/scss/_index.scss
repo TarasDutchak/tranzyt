@@ -757,6 +757,31 @@
     }
 }
 
+.delivery__imgwrap {
+    text-align: center;
+}
+
+.delivery__descr {
+    padding-left: 40px;
+}
+
+.whybox {
+    transition: 0.3s;
+    border: 1px solid #fff;
+
+    p, .title {
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background: var(--red);
+
+        p, .title {
+            color: #fff;
+        }
+    }
+}
+
 
 @media(max-width:1700.8px) {
     .herosection__bg {
@@ -830,6 +855,14 @@
 
     .brandssection .brandsslider .swiper-slide {
         width: 210px;
+    }
+
+    .delivery__imgwrap {
+        text-align: right;
+    }
+    
+    .delivery__descr {
+        padding-left: 0;
     }
 
 }

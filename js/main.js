@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    AOS.init({
+        duration: 1400,
+    });
+
     var swiper = new Swiper(".mainslider", {
         slidesPerView: 1,
         spaceBetween: 20,
