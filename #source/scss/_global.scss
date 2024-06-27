@@ -43,6 +43,22 @@ body * {
     }
 }
 
+
+
+@media(min-width:1500px) {
+    .container {
+        max-width: 1450px;
+    }
+}
+
+@media(min-width:1700px) {
+    .container {
+        max-width: 1600px;
+    }
+
+   
+}
+
 input {
     outline: none;
 }
