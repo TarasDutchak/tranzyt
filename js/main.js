@@ -8,7 +8,7 @@ $(document).ready(function () {
         spaceBetween: 20,
         effect: "fade",
         loop: true,
-        initialSlide: 3,
+        // initialSlide: 3,
         speed: 1000,
         autoplay: {
             delay: 3500,
@@ -94,7 +94,6 @@ $(document).ready(function () {
             reverseDirection: true
         },
     });
-
 
     $('.menubtn').click(function () {
         $('.headernavcolumn').addClass('active');
