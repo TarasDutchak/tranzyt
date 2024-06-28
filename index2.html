@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-2">
+                        <a href="#" class="logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-xl-8 headernavcolumn">
+                        <nav>
+                            <ul>
+                                <li><a href="#1">Автозапчастини</a></li>
+                                <li><a href="#2">Чому обирають нас?</a></li>
+                                <li><a href="#3">Команда</a></li>
+                                <li><a href="#4">Доставка</a></li>
+                                <li><a href="#5">Контакти</a></li>
+                            </ul>
+                        </nav>
+                        <button class="closemenu">
+                            <img src="img/close.png" alt="close">
+                        </button>
+                    </div>
+                    <div class="col-xl-2 hcloc">
+                        <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8+%D0%A1%D1%82%D0%B5%D1%86%D1%8C%D0%BA%D0%BE,+2,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+76000/@48.9103584,24.7092501,17z/data=!3m1!4b1!4m6!3m5!1s0x4730c1447c59694f:0x28a01bb95be9ffda!8m2!3d48.9103549!4d24.711825!16s%2Fg%2F1td4hwvt?hl=ua&entry=ttu"
+                            target="_blank" class="loc">
+                            м.Івано-Франківськ,<br> вул. Слави Стецько 2
+                        </a>
+                    </div>
+                    <button class="menubtn">
+                        <img src="img/menu.png" alt="menu">
+                    </button>
+                </div>
+            </div>
+            <div class="mobshadowbox"></div>
+        </header>
+
+        <main class="main">
+            <section class="herosection">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="herosection__info">
+                                <h1 data-aos="fade-up">
+                                    Надійні запчастини для вашого автотранспорта
+                                </h1>
+                                <p data-aos="fade-up" data-aos-delay="200">
+                                    Ми - ваш надійний партнер у світі автомобільного обслуговування.<br>
+                                    Пропонуємо широкий асортимент запчастин для мікроавтобусів та комерційних авто таких
+                                    відомих брендів, як:
+                                </p>
+                                <div class="herosection__brands" data-aos="fade-up" data-aos-delay="400">
+                                    <span class="brand">
+                                        <span class="brandimg">
+                                            <img src="img/brand1.png" alt="img">
+                                        </span>
+                                        <span class="name">Ford</span>
+                                    </span>
+                                    <span class="brand">
+                                        <span class="brandimg">
+                                            <img src="img/brand2.png" alt="img">
+                                        </span>
+                                        <span class="name">Mercedes</span>
+                                    </span>
+                                    <span class="brand">
+                                        <span class="brandimg">
+                                            <img src="img/brand7.png" alt="img">
+                                        </span>
+                                        <span class="name">Citroen</span>
+                                    </span>
+                                    <span class="brand">
+                                        <span class="brandimg">
+                                            <img src="img/brand3.png" alt="img">
+                                        </span>
+                                        <span class="name">Volkswagen</span>
+                                    </span>
+                                    <span class="brand">
+                                        <span class="brandimg">
+                                            <img src="img/brand4.png" alt="img">
+                                        </span>
+                                        <span class="name">Peugeot</span>
+                                    </span>
+                                    <span class="brand">
+                                        <span class="brandimg">
+                                            <img src="img/brand5.png" alt="img">
+                                        </span>
+                                        <span class="name">Fiat</span>
+                                    </span>
+                                    <span class="brand">
+                                        <span class="brandimg">
+                                            <img src="img/brand6.png" alt="img">
+                                        </span>
+                                        <span class="name">Renault</span>
+                                    </span>
+
+                                </div>
+                                <a href="#5" class="contactus scrlcont" data-aos="fade-up" data-aos-delay="500">
+                                    Зв’язатись з нами
+                                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.6014 14.0303C20.8943 13.7374 20.8943 13.2626 20.6014 12.9697L15.8285 8.1967C15.5356 7.90381 15.0607 7.90381 14.7678 8.1967C14.4749 8.48959 14.4749 8.96447 14.7678 9.25736L19.0104 13.5L14.7678 17.7426C14.4749 18.0355 14.4749 18.5104 14.7678 18.8033C15.0607 19.0962 15.5356 19.0962 15.8285 18.8033L20.6014 14.0303ZM5.92896 14.25H20.0711V12.75H5.92896V14.25Z"
+                                            fill="#CB242A" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="swiper mainslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/slide11.png" alt="slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/slide22.png" alt="slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/slide33.png" alt="slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/slide44.png" alt="slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/slide55.png" alt="slide">
+                                    </div>
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next">
+                                    <img src="img/arr-right.svg" alt="next">
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="img/arr-left.svg" alt="prev">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="herosection__bg" src="img/bg.png" alt="bg">
+                <img class="herosection__bg2" src="img/whybgtop.png" alt="bg">
+            </section>
+
+            <section class="autoparts" id="1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="autoparts__left">
+                                <p class="titleh3">
+                                    Автозапчастини
+                                </p>
+                                <p>
+                                    Продаж запчастин до мікроавтобусів від провідних виробників.<br>
+                                    Наша мета — забезпечити вас надійними та довговічними компонентами для вашого
+                                    транспорту.
+                                </p>
+                                <a href="#5" class="redbtn scrlcont">
+                                    Зв’язатись з нами
+                                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.6014 14.0303C20.8943 13.7374 20.8943 13.2626 20.6014 12.9697L15.8285 8.1967C15.5356 7.90381 15.0607 7.90381 14.7678 8.1967C14.4749 8.48959 14.4749 8.96447 14.7678 9.25736L19.0104 13.5L14.7678 17.7426C14.4749 18.0355 14.4749 18.5104 14.7678 18.8033C15.0607 19.0962 15.5356 19.0962 15.8285 18.8033L20.6014 14.0303ZM5.92896 14.25H20.0711V12.75H5.92896V14.25Z"
+                                            fill="#CB242A" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="autoparts__right">
+                                <div class="autoparts__row" data-aos="fade-up">
+                                    <div class="autoparts__img">
+                                        <img src="img/autopart1.png" alt="img">
+                                    </div>
+                                    <div class="autoparts__name">
+                                        <p>Ford</p>
+                                    </div>
+                                    <div class="autoparts__descr">
+                                        <p>
+                                            Транзит 86-00р., Транзит V-184 00-06р, Транзит V-347 06-13р., Транзит V-362
+                                            13-21р., Транзит Customs, CONNECT, CONNECT2
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="autoparts__row" data-aos="fade-up">
+                                    <div class="autoparts__img">
+                                        <img src="img/autopart2.png" alt="img">
+                                    </div>
+                                    <div class="autoparts__name">
+                                        <p>Mercedes</p>
+                                    </div>
+                                    <div class="autoparts__descr">
+                                        <p>
+                                            609, -814, Vario, Sprinter 95-06р., 207-310 83-95р., Sprinter 06-21р.,
+                                            207-310 83-95р., Sprinter 06-21р.,Vito w638, Vito w639, Vito w447
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="autoparts__row" data-aos="fade-up">
+                                    <div class="autoparts__img">
+                                        <img src="img/autopart3.png" alt="img">
+                                    </div>
+                                    <div class="autoparts__name">
+                                        <p>Volkswagen</p>
+                                    </div>
+                                    <div class="autoparts__descr">
+                                        <p>
+                                            LT 96-06р., Crafter, T-4, T-5, Caddy 3, Caddy 4
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="autoparts__row" data-aos="fade-up">
+                                    <div class="autoparts__img">
+                                        <img src="img/autopart4.png" alt="img">
+                                    </div>
+                                    <div class="autoparts__name">
+                                        <p>Citroen</p>
+                                    </div>
+                                    <div class="autoparts__descr">
+                                        <p>
+                                            Berlingo, Jumpy, Jumper, Nemo, C4.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="autoparts__row" data-aos="fade-up">
+                                    <div class="autoparts__img">
+                                        <img src="img/autopart5.png" alt="img">
+                                    </div>
+                                    <div class="autoparts__name">
+                                        <p>Peugeot</p>
+                                    </div>
+                                    <div class="autoparts__descr">
+                                        <p>
+                                            Expert, Partner, Bipper, Boxer
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="autoparts__row" data-aos="fade-up">
+                                    <div class="autoparts__img">
+                                        <img src="img/autopart6.png" alt="img">
+                                    </div>
+                                    <div class="autoparts__name">
+                                        <p>Renault</p>
+                                    </div>
+                                    <div class="autoparts__descr">
+                                        <p>
+                                            Kangoo, Megane, Scenic, Master, Trafic
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="autoparts__row" data-aos="fade-up">
+                                    <div class="autoparts__img">
+                                        <img src="img/autopart7.png" alt="img">
+                                    </div>
+                                    <div class="autoparts__name">
+                                        <p>Fiat</p>
+                                    </div>
+                                    <div class="autoparts__descr">
+                                        <p>
+                                            Doblo, Scudo, Ducato, Fiorino
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="whysect" id="2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="autoparts__left">
+                                <p class="titleh3">
+                                    Чому обирають нас?
+                                </p>
+                                <p>
+                                    Продаж запчастин до мікроавтобусів від провідних виробників.<br>
+                                    Наша мета — забезпечити вас надійними та довговічними компонентами для вашого
+                                    транспорту.
+                                </p>
+                                <a href="#5" class="redbtn scrlcont">
+                                    Зв’язатись з нами
+                                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.6014 14.0303C20.8943 13.7374 20.8943 13.2626 20.6014 12.9697L15.8285 8.1967C15.5356 7.90381 15.0607 7.90381 14.7678 8.1967C14.4749 8.48959 14.4749 8.96447 14.7678 9.25736L19.0104 13.5L14.7678 17.7426C14.4749 18.0355 14.4749 18.5104 14.7678 18.8033C15.0607 19.0962 15.5356 19.0962 15.8285 18.8033L20.6014 14.0303ZM5.92896 14.25H20.0711V12.75H5.92896V14.25Z"
+                                            fill="#CB242A" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-xl-6" data-aos="fade-up">
+                                    <div class="whybox">
+                                        <div class="icbox">
+                                            <img src="img/whyic1.svg" alt="icon">
+                                        </div>
+                                        <div class="descrbox">
+                                            <p class="title">Досвід</p>
+                                            <p>
+                                                Понад 25 років роботи на ринку автозапчастин до мікроавтобусів.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6" data-aos="fade-up">
+                                    <div class="whybox">
+                                        <div class="icbox">
+                                            <img src="img/whyic2.svg" alt="icon">
+                                        </div>
+                                        <div class="descrbox">
+                                            <p class="title">Висока якість</p>
+                                            <p>
+                                                Ми пропонуємо оригінальні та високоякісні запчастини від провідних
+                                                виробників.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12" data-aos="fade-up">
+                                    <div class="whybox">
+                                        <div class="icbox">
+                                            <img src="img/whyic3.svg" alt="icon">
+                                        </div>
+                                        <div class="descrbox">
+                                            <p class="title">Широкий асортимент</p>
+                                            <p>
+                                                У нас ви знайдете все необхідне для ремонту та обслуговування вашого
+                                                комерційного авто.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6" data-aos="fade-up">
+                                    <div class="whybox">
+                                        <div class="icbox">
+                                            <img src="img/whyic4.svg" alt="icon">
+                                        </div>
+                                        <div class="descrbox">
+                                            <p class="title">Конкурентні ціни</p>
+                                            <p>
+                                                Ми пропонуємо найкращі ціни на ринку.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6" data-aos="fade-up">
+                                    <div class="whybox">
+                                        <div class="icbox">
+                                            <img src="img/whyic5.svg" alt="icon">
+                                        </div>
+                                        <div class="descrbox">
+                                            <p class="title">Клієнтність</p>
+                                            <p>
+                                                Індивідуальний підхід до кожного клієнта та його потреб.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="whtopbg" src="img/whybgtop.png" alt="bg">
+                <img class="whbotbg" src="img/whybgbott.png" alt="bg">
+            </section>
+
+            <section class="brandssection">
+                <div class="container">
+                    <p class="titleh3">Бренди, з якими ми працюємо</p>
+                    <!-- <div class="brandssectionwrapper">
+                        <div class="brandblock">
+                            <img src="img/br1.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br2.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br3.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br4.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br5.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br6.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br7.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br8.png" alt="img">
+                        </div>
+                        <div class="brandblock">
+                            <img src="img/br9.png" alt="img">
+                        </div>
+                        
+                    </div> -->
+                </div>
+
+                <div class="swiper brandsslider v1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br4.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br5.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br6.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br7.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br8.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br9.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper brandsslider v2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br4.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br5.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br6.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br7.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br8.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brandblock">
+                                <img src="img/br9.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="teamsect" id="3">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 text-end">
+                            <div class="imgwrap">
+                                <img class="timg" src="img/img1.png" alt="img">
+                                <img class="ticon" src="img/teamicon.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="teamdescr">
+                                <p class="titleh3" data-aos="fade-up-left">команда Спеціалістів</p>
+                                <p data-aos="fade-up-left">
+                                    Наша команда — це група висококваліфікованих професіоналів з багаторічним досвідом у
+                                    галузі автозапчастин. Кожен член нашого колективу є експертом у даній сфері, що
+                                    дозволяє нам надавати найкращі рішення для наших клієнтів.
+                                </p>
+                                <a href="#5" class="redbtn scrlcont" data-aos="fade-up-left">
+                                    Зв’язатись з нами
+                                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.6014 14.0303C20.8943 13.7374 20.8943 13.2626 20.6014 12.9697L15.8285 8.1967C15.5356 7.90381 15.0607 7.90381 14.7678 8.1967C14.4749 8.48959 14.4749 8.96447 14.7678 9.25736L19.0104 13.5L14.7678 17.7426C14.4749 18.0355 14.4749 18.5104 14.7678 18.8033C15.0607 19.0962 15.5356 19.0962 15.8285 18.8033L20.6014 14.0303ZM5.92896 14.25H20.0711V12.75H5.92896V14.25Z"
+                                            fill="#CB242A"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="img/bgel1.png" alt="bg" class="bgel">
+            </section>
+
+            <section class="delivery" id="4">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="delivery__descr">
+                                <p class="titleh3" data-aos="fade-up-right">
+                                    Безкоштовна доставка
+                                </p>
+                                <p data-aos="fade-up-right">
+                                    Наші спеціалісти завжди готові надати вам необхідну консультацію та допомогти з
+                                    вибором запчастин. Зробіть замовлення зараз! - Ми гарантуємо швидку доставку та
+                                    високу якість обслуговування.
+                                </p>
+                                <div class="infosect" data-aos="fade-up-right">
+                                    <p>
+                                        На суму від 2500 грн магазин автозапчастин «Транзит» надає безкоштовну доставку
+                                        сервісами доставки:
+                                    </p>
+                                    <div class="postgr">
+                                        <img src="img/np.png" alt="img">
+                                        <img src="img/up.png" alt="img">
+                                    </div>
+                                    <p>
+                                        <i>
+                                            *за умови здійснення повної предоплати.
+                                        </i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="delivery__imgwrap">
+                                <img src="img/img2.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                    <p class="titleh3">
+                        Відгуки клієнтів
+                    </p>
+                    <div class="testimonialsslider">
+                        <div class="swiper testimsl">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimbox">
+                                        <div class="imgwrap">
+                                            <img src="img/ava.png" alt="img">
+                                        </div>
+                                        <div class="descrwrap">
+                                            <p class="name">Ігор<br> жураковський</p>
+                                            <div class="rating">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                            </div>
+                                            <p class="descr">
+                                                Один з найкращих профільних магазинів Івано-Франківська.Ціни надзвичайно
+                                                конкурентні,консультація від професіоналів.Йдуть назустріч покупцеві
+                                                завжди і при любій ситуації.Дай вам Боже здоров*я хлопці.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimbox">
+                                        <div class="imgwrap">
+                                            <img src="img/ava.png" alt="img">
+                                        </div>
+                                        <div class="descrwrap">
+                                            <p class="name">Степан<br>
+                                                кос</p>
+                                            <div class="rating">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star2.svg" alt="img">
+                                            </div>
+                                            <p class="descr">
+                                                Щодо запчастин - якщо чогось нема, то це - рідкісне виключення. <br>В
+                                                магазині є з ким порадитись і познімати "локшину з вух" від всяких
+                                                різних "спеціалістів
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimbox">
+                                        <div class="imgwrap">
+                                            <img src="img/ava.png" alt="img">
+                                        </div>
+                                        <div class="descrwrap">
+                                            <p class="name">Rostyslav <br>
+                                                Bilyy</p>
+                                            <div class="rating">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                            </div>
+                                            <p class="descr">
+                                                Замовляв для свого форда тормозні колодки, швидко підібрали. В
+                                                загальному дуже задовлений!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimbox">
+                                        <div class="imgwrap">
+                                            <img src="img/ava.png" alt="img">
+                                        </div>
+                                        <div class="descrwrap">
+                                            <p class="name">Степан<br>
+                                                кос</p>
+                                            <div class="rating">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star1.svg" alt="img">
+                                                <img src="img/star2.svg" alt="img">
+                                            </div>
+                                            <p class="descr">
+                                                Щодо запчастин - якщо чогось нема, то це - рідкісне виключення. <br>В
+                                                магазині є з ким порадитись і познімати "локшину з вух" від всяких
+                                                різних "спеціалістів
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+            <section class="contactus" id="5">
+                <div class="contactus__left">
+                    <p class="titleh3">
+                        Зв'яжіться з нами
+                    </p>
+                    <p>
+                        Ви завжди можете завітати до нас за адресою:
+                    </p>
+                    <div class="contaddr">
+                        <div class="contaddr__title">
+                            <img src="img/pin2.svg" alt="img">
+                            Адреса
+                        </div>
+                        <div class="contaddr__descr">
+                            <p>
+                                м.Івано-Франківськ, вул.<br> Слави Стецько 2.
+                            </p>
+                            <a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8+%D0%A1%D1%82%D0%B5%D1%86%D1%8C%D0%BA%D0%BE,+2,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+76000"
+                            target="_blank">
+                                Докладніше
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="contnums">
+                        <p class="title">
+                            <img src="img/flag1.png" alt="flag">
+                            Німецькі марки авто (Ігор):
+                        </p>
+                        <ul>
+                            <li><a href="tel:+380673422392">+380 67 342 2392</a></li>
+                            <li><a href="tel:+380502823472">+380 50 282 3472</a></li>
+                            <li><a href="tel:+380342720190">+380 342 72 01 90</a></li>
+                        </ul>
+                    </div>
+                    <div class="contnums">
+                        <p class="title">
+                            <img src="img/flag2.png" alt="flag">
+                            <img src="img/flag3.png" alt="flag">
+                            Французькі та італійські марки авто (Олег):
+                        </p>
+                        <ul>
+                            <li><a href="tel:+380673422392">+380 67 342 2392</a></li>
+                            <li><a href="tel:+380502823472">+380 50 282 3472</a></li>
+                            <li><a href="tel:+380342720190">+380 342 72 01 90</a></li>
+                        </ul>
+                    </div>
+                    <div class="contaddr">
+                        <div class="contaddr__title">
+                            <img src="img/emailic.svg" alt="img">
+                            Контактна пошта:
+                        </div>
+                        <a href="mailto:transit_if@ukr.net" class="emaillink">transit_if@ukr.net</a>
+
+                    </div>
+                </div>
+                <!-- <div class="contactus__right">
+                    <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8+%D0%A1%D1%82%D0%B5%D1%86%D1%8C%D0%BA%D0%BE,+2,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+76000/@48.9103584,24.7092501,17z/data=!3m1!4b1!4m6!3m5!1s0x4730c1447c59694f:0x28a01bb95be9ffda!8m2!3d48.9103549!4d24.711825!16s%2Fg%2F1td4hwvt?hl=ua&entry=ttu"
+                    target="_blank" class="imgwrap">
+                        <img src="img/map.png" alt="map">
+                    </a>
+                </div> -->
+                <div class="contactus__right">
+                    <a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8+%D0%A1%D1%82%D0%B5%D1%86%D1%8C%D0%BA%D0%BE,+2,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+76000"
+                       target="_blank" class="imgwrap">
+                        <img src="img/map.png" alt="map">
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footertop">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <a href="#" class="footerlogo">
+                                <img src="img/footerlogo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-xl-7 col-lg-8">
+                            <nav>
+                                <ul>
+                                    <li><a href="#1">Автозапчастини</a></li>
+                                    <li><a href="#2">Чому обирають нас?</a></li>
+                                    <li><a href="#3">Команда</a></li>
+                                    <li><a href="#4">Доставка</a></li>
+                                    <li><a href="#5">Контакти</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 text-end">
+                            <a href="#" class="totop">
+                                <img src="img/totop.png" alt="totop">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerbott">
+                <p>
+                    Transit spare parts 2024. Всі права захищені.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
