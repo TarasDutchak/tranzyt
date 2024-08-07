@@ -1,6 +1,8 @@
 $(document).ready(function () {
     AOS.init({
         duration: 1400,
+        disable: 'mobile',
+		once: true,
     });
 
     var swiper = new Swiper(".mainslider", {

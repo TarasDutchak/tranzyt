@@ -167,7 +167,8 @@ header.header {
         overflow: auto;
         padding: 100px 40px 40px 40px;
         transform: translateX(400px);
-        transition: 0.3s;
+        // transition: 0.3s;
+        transition: transform 0.3s ease;
 
         &.active {
             transform: translateX(0);
