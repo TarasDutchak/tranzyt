@@ -1,8 +1,9 @@
 $(document).ready(function () {
     AOS.init({
-        duration: 1400,
-        disable: 'mobile',
-		once: true,
+        once: true,
+        offset: -50,
+        duration: 1200,
+        easing: "ease-in-out",
     });
 
     var swiper = new Swiper(".mainslider", {
@@ -116,7 +117,7 @@ $(document).ready(function () {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 80;
-        $('body,html').animate({ scrollTop: top }, 800);
+        $('body,html').animate({ scrollTop: top }, 1200);
     });
 
     if ($(window).width() < 1200) {
